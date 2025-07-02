@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Substation Automation App</string>
+    <string name="feeder_1">Feeder 1</string>
+    <string name="volts">Volts</string>
+    <string name="current">Current</string>
+    <string name="_0_0">0.0</string>
+    <string name="temp">Temp.</string>
+    <string name="power_factor">Power Factor :</string>
+    <string name="feeder_2">Feeder 2</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992417547869",
+    "project_id": "substation-automation-app",
+    "storage_bucket": "substation-automation-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992417547869:android:0246ba1ec5d8aed77cafb4",
+        "android_client_info": {
+          "package_name": "com.cyril.substationautomationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLlVXgFMXeRJzJJsiJcasLF4t_0C41Eco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
