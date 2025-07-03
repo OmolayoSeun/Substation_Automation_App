@@ -1,10 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Setting">
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/feeder_1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="28dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeStepGranularity="2dp"
+        app:autoSizeTextType="uniform" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/voltage"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f1_t_v"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/current"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f1_t_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/temperature"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f1_t_t"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/feeder_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="28dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeStepGranularity="2dp"
+        app:autoSizeTextType="uniform" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/voltage"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f2_t_v"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/current"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f2_t_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/temperature"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/f2_t_t"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/_0_0"
+            android:inputType="numberDecimal"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="2dp"
+            app:autoSizeTextType="uniform"
+            tools:ignore="Autofill,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="SAVE" />
+
+</LinearLayout>

@@ -7,4 +7,9 @@
     <string name="temp">Temp.</string>
     <string name="power_factor">Power Factor :</string>
     <string name="feeder_2">Feeder 2</string>
+    <string name="view_logs">View Logs</string>
+    <string name="settings">Threshold Settings</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="voltage">Voltage:</string>
+    <string name="temperature">Temperature:</string>
 </resources>
