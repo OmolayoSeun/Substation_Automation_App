@@ -49,10 +49,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/volts"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -60,25 +60,28 @@
             <TextView
                 android:id="@+id/feeder1_volt"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform"
                 tools:ignore="NestedWeights" />
-        </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder1_volt_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
+            <ProgressBar
+                android:id="@+id/feeder1_volt_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -88,10 +91,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/current"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -99,25 +102,28 @@
             <TextView
                 android:id="@+id/feeder1_current"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform"
                 tools:ignore="NestedWeights" />
-        </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder1_current_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
+            <ProgressBar
+                android:id="@+id/feeder1_current_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -127,10 +133,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/temp"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -138,23 +144,27 @@
             <TextView
                 android:id="@+id/feeder1_temperature"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
+
+            <ProgressBar
+                android:id="@+id/feeder1_temperature_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
         </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder1_temperature_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
     </LinearLayout>
 
     <LinearLayout
@@ -170,7 +180,7 @@
             android:layout_weight="1"
             android:singleLine="true"
             android:text="@string/power_factor"
-            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMaxTextSize="@dimen/text_size_small"
             app:autoSizeMinTextSize="16sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform" />
@@ -182,7 +192,7 @@
             android:layout_weight="1"
             android:singleLine="true"
             android:text="@string/_0_0"
-            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMaxTextSize="@dimen/text_size_small"
             app:autoSizeMinTextSize="16sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform" />
@@ -229,10 +239,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/volts"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -240,25 +250,28 @@
             <TextView
                 android:id="@+id/feeder2_volt"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform"
                 tools:ignore="NestedWeights" />
-        </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder2_volt_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
+            <ProgressBar
+                android:id="@+id/feeder2_volt_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -268,10 +281,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/current"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -279,25 +292,28 @@
             <TextView
                 android:id="@+id/feeder2_current"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform"
                 tools:ignore="NestedWeights" />
-        </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder2_current_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="5dp"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
+            <ProgressBar
+                android:id="@+id/feeder2_current_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -307,10 +323,10 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/temp"
-                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
@@ -318,23 +334,27 @@
             <TextView
                 android:id="@+id/feeder2_temperature"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:gravity="center"
                 android:text="@string/_0_0"
-                app:autoSizeMaxTextSize="30sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/text_size_small"
                 app:autoSizeMinTextSize="16sp"
                 app:autoSizeStepGranularity="2sp"
                 app:autoSizeTextType="uniform" />
+
+            <ProgressBar
+                android:id="@+id/feeder2_temperature_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/progress_bar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.10"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress"
+                android:rotation="0" />
         </LinearLayout>
 
-        <com.cyril.substationautomationapp.VerticalProgressBar
-            android:id="@+id/feeder2_temperature_progress"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.10"
-            android:progress="70"
-            android:rotation="0" />
     </LinearLayout>
 
     <LinearLayout
@@ -350,7 +370,7 @@
             android:layout_weight="1"
             android:singleLine="true"
             android:text="@string/power_factor"
-            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMaxTextSize="@dimen/text_size_small"
             app:autoSizeMinTextSize="16sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform" />
@@ -362,7 +382,7 @@
             android:layout_weight="1"
             android:singleLine="true"
             android:text="@string/_0_0"
-            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeMaxTextSize="@dimen/text_size_small"
             app:autoSizeMinTextSize="16sp"
             app:autoSizeStepGranularity="2sp"
             app:autoSizeTextType="uniform" />

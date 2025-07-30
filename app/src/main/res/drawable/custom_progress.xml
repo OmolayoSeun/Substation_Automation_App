@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Capsule -->
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp" />
+            <solid android:color="#FFFFFF" />
+            <stroke android:width="3dp" android:color="#6A00FF" />
+            <corners android:radius="50dp" />
+        </shape>
+    </item>
+
+    <!-- Fill Capsule -->
+    <item android:id="@android:id/progress">
+        <clip android:clipOrientation="vertical" android:gravity="bottom" >
+            <shape android:shape="rectangle">
+                <solid android:color="#6A00FF" />
+                <corners android:radius="50dp" />
+                <stroke android:color="#ffffff" android:width="1dp"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>
+

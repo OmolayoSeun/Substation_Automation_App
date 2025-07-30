@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General sizes -->
+    <dimen name="text_size_small">30dp</dimen>
+    <dimen name="progress_bar_width">25dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="title_text_size">24sp</dimen>
+    <dimen name="label_text_size">14sp</dimen>
+
+    <!-- Padding & margin -->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+
+</resources>
