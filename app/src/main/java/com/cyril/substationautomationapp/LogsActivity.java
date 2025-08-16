@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Collections;
 import java.util.List;
 
 public class LogsActivity extends AppCompatActivity {
@@ -31,6 +32,7 @@ public class LogsActivity extends AppCompatActivity {
         List<LogData> logDataList = StaticData.getInstance().getLogDataList();
 
         if (logDataList != null) {
+            Collections.reverse(logDataList);
             ListViewAdapter adapter = new ListViewAdapter(this, logDataList);
             listView.setAdapter(adapter);
         }

@@ -3,6 +3,7 @@ package com.cyril.substationautomationapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -163,6 +164,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
+        startFirebaseListenerService();
 
         logRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -303,5 +305,19 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else return super.onOptionsItemSelected(item);
 
+    }
+
+
+    private void startFirebaseListenerService() {
+        Intent serviceIntent = new Intent(this, FirebaseListenerService.class);
+
+        // For Android Oreo (API 26) and above, you need to start foreground services differently.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            startForegroundService(serviceIntent);
+            Log.d("MainActivity", "Starting foreground service.");
+        } else {
+            startService(serviceIntent);
+            Log.d("MainActivity", "Starting service for pre-Oreo.");
+        }
     }
 }
