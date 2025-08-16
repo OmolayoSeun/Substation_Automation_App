@@ -309,15 +309,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void startFirebaseListenerService() {
-        Intent serviceIntent = new Intent(this, FirebaseListenerService.class);
 
-        // For Android Oreo (API 26) and above, you need to start foreground services differently.
+        Intent serviceIntent = new Intent(this, FirebaseBackgroundService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             startForegroundService(serviceIntent);
-            Log.d("MainActivity", "Starting foreground service.");
         } else {
             startService(serviceIntent);
-            Log.d("MainActivity", "Starting service for pre-Oreo.");
         }
     }
 }
